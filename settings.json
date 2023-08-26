@@ -1,0 +1,134 @@
+{
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "editor.inlineSuggest.enabled": true,
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "launch": {},
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.lineNumbers": "relative",
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.foldfix": true,
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    // { "before": ["<S-h>"], "commands": [":bprevious"] },
+    // { "before": ["<S-l>"], "commands": [":bnext"] },
+    // go to reference cmd
+    { "before": ["gr"], "commands": ["editor.action.goToReferences"] },
+    { "before": ["ctrl+o"], "commands": ["workbench.action.navigateBack"] },
+    { "before": ["ctrl+i"], "commands": ["workbench.action.navigateForward"] },
+    { "before": ["Tab"], "commands": [":bnext"] },
+    { "before": ["Shift+Tab"], "commands": [":bprevious"] },
+    {
+      "before": ["leader", "x"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // make text title case
+    {
+      "before": ["leader", "t", "t"],
+      "commands": ["editor.action.transformToTitlecase"]
+    },
+    {
+      "before": ["leader", "t", "u"],
+      "commands": [":s/_//g"]
+    },
+
+    { "before": ["]", "d"], "commands": ["editor.action.marker.nextInFiles"] },
+    { "before": ["[", "d"], "commands": ["editor.action.marker.prevInFiles"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "h"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["ctrl+h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["ctrl+j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["ctrl+k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["ctrl+l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["ctrl+n"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    { "before": ["ctrl+f"], "commands": ["actions.find"] },
+    // FILE TREE
+    { "before": ["leader", "e"], "commands": ["workbench.view.explorer"] },
+    {
+      "before": ["ctrl+b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+
+    { "before": ["ctrl+a"], "commands": ["editor.action.selectAll"] },
+    { "before": ["ctrl+c"], "commands": ["editor.action.clipboardCopyAction"] },
+    { "before": ["ctrl+shift+o"], "commands": ["workbench.action.gotoSymbol"] },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": ["workbench.action.files.save"] },
+    {
+      "before": ["leader", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "f", "m"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["Shift+k"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    { "before": ["ctrl+a"], "commands": ["editor.action.selectAll"] },
+    { "before": ["ctrl+c"], "commands": ["editor.action.clipboardCopyAction"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "'Hack Nerd Font Mono'",
+  "window.zoomLevel": -1,
+  "editor.minimap.enabled": false,
+  "explorer.confirmDelete": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "files.autoSave": "afterDelay",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.stickyScroll.enabled": true
+}

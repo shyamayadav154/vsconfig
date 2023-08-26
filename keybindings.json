@@ -1,0 +1,95 @@
+// Place your key bindings in this file to override the defaults
+[
+  // NAVIGATION
+  {
+    "key": "alt+j",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+h",
+    "command": "workbench.action.positionPanelBottom",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "alt+h",
+    "command": "workbench.action.togglePanel",
+    "when": "panelPosition == 'bottom'"
+  },
+  {
+    "key": "alt+v",
+    "command": "workbench.action.positionPanelRight",
+    "args": {
+      "splitDirection": "down"
+    },
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "alt+v",
+    "command": "workbench.action.togglePanel",
+    "when": "panelPosition == 'right'"
+  },
+  {
+    "key": "alt+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+x",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+
+  // FILE TREE
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.newWindow",
+    "when": "!explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+
+  // EXTRA
+  {
+    "key": "ctrl+shift+5",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "toggleSearchEditorContextLines",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "alt+l",
+    "command": "-toggleSearchEditorContextLines",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "toggleFindInSelection",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "-toggleFindInSelection",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+  }
+]
